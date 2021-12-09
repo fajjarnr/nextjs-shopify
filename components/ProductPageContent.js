@@ -14,7 +14,7 @@ export default function ProductPageContent({ product }) {
           />
         </div>
       </div>
-      <ProductForm />
+      <ProductForm product={product} />
     </div>
   );
 }
