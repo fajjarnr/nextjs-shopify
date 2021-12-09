@@ -10,9 +10,7 @@ export default function Home({ products }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <ProductList products={products} />
-      </main>
+      <ProductList products={products} />
     </div>
   );
 }
