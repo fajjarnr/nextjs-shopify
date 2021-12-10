@@ -1,7 +1,10 @@
+import { useRouter } from 'next/router';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import 'tailwindcss/tailwind.css';
 import Layout from '../components/Layout';
 import ShopProvider from '../context/ShopProvider';
-import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
