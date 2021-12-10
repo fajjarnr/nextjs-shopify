@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import { getProductsInCollection } from '../lib/shopify';
-import ProductList from '../components/ProductList';
 import Hero from '../components/Hero';
+import ProductList from '../components/ProductList';
+import { getProductsInCollection } from '../lib/shopify';
 
 export default function Home({ products }) {
   return (
