@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useContext } from 'react';
+import MiniCart from './MiniCart';
 import { CartContext } from '../context/ShopProvider';
 
 export default function Nav() {
@@ -18,9 +19,13 @@ export default function Nav() {
             <span className="text-lg pt-1 font-bold">Jual Beli</span>
           </a>
         </Link>
-        <a className="text-md font-bold cursor-pointer">
+        <a
+          className="text-md font-bold cursor-pointer"
+          onClick={() => setCartOpen(!cartOpen)}
+        >
           Cart ({cartQuantity})
         </a>
+        <MiniCart cart={cart} />
       </div>
     </header>
   );
