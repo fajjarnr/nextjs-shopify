@@ -22,10 +22,7 @@ export default function Home({ products }) {
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://jual-beli.vercel.app/" />
-        <meta
-          property="og:image"
-          content="https://jual-beli.vercel.app/images/share.png"
-        />
+
         <meta
           property="og:description"
           content="Modern eCommerce focusing on Shopify, Next.js, TailwindCSS, GraphQL."
@@ -33,6 +30,18 @@ export default function Home({ products }) {
         <meta property="og:determiner" content="the" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Jual Beli" />
+        <meta
+          property="og:image"
+          content="https://jual-beli.vercel.app/images/share.png"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://jual-beli.vercel.app/images/share.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:image:alt" content="logo" />
       </Head>
       <Hero />
       <ProductList products={products} />
